@@ -63,15 +63,15 @@ for p in range (jumlah) :
     else:
         kursi_dipesan = kursi_dipesan + "#" + str(nomor_kursi) + "#"
 
-        if baris_kursi < 2:
+        if baris_kursi <= 2:
             kategori = "VVIP"
             harga = harga_vvip
             VVIP -= 1
-        elif baris_kursi < 5:
+        elif 3<= baris_kursi <= 5:
             kategori = "VIP"
             harga = harga_vip
             VIP -= 1
-        elif baris_kursi < 15:
+        elif 6 <=baris_kursi <= 15:
             kategori = "REGULER"
             harga = harga_reguler
             REGULER -= 1
